@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTC - Verificación de identidad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f2e9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: #c1e1c5;
+            padding: 15px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .logo h1 {
+            font-size: 1.2em;
+            color: #2c7a47;
+        }
+        .premium-badge {
+            background-color: #fde68a;
+            color: #92400e;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+        }
+        .content {
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #f3f4f6;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e5e7eb;
+        }
+        .profile-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .profile-buttons button {
+            flex: 1;
+        }
+        .back-button {
+            margin-top: 20px;
+            background-color: #f3f4f6;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="/api/placeholder/40/40" alt="CTC Logo">
+                <h1>Community.TechChat</h1>
+            </div>
+            <span class="premium-badge">Premium ⚡</span>
+        </header>
+
+        <div class="content">
+            <h2>Verificación de identidad</h2>
+            
+            <p>
+                Para garantizar la seguridad y ofrecerte el mejor servicio, es necesario verificar tu identidad.
+                Completa el siguiente proceso:
+            </p>
+
+            <form class="form-grid">
+                <div>
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="identificacion">Identificación Oficial (INE, pasaporte, licencia)</label>
+                    <button type="button">• Subir archivo</button>
+                </div>
+                <div>
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input type="text" id="fecha" name="fecha" placeholder="DD/MM/AAAA">
+                </div>
+                <div>
+                    <label for="domicilio">Comprobante de Domicilio (factura reciente, etc)</label>
+                    <button type="button">• Subir archivo</button>
+                </div>
+                <div>
+                    <label for="telefono">Número de Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div>
+                    <label for="rfc">Ingrese su RFC</label>
+                    <input type="text" id="rfc" name="rfc">
+                </div>
+                <div>
+                    <label for="correo">Correo de verificación</label>
+                    <input type="email" id="correo" name="correo">
+                </div>
+                <div>
+                    <label>Perfil Profesional</label>
+                    <div class="profile-buttons">
+                        <button type="button">Profesión u Oficio</button>
+                        <button type="button">Cliente</button>
+                        <button type="button">Proveedor</button>
+                    </div>
+                </div>
+            </form>
+
+            <button class="back-button">Atrás</button>
+        </div>
+    </div>
+</body>
+</html>

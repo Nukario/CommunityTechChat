@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTC - Proveedores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f3e6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #90ee90;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: -20px -20px 20px -20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .logo span {
+            color: #006400;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .premium-badge {
+            background-color: #f0f0f0;
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+        }
+        .premium-badge::after {
+            content: "⚡";
+            margin-left: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: #006400;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .back-button {
+            background-color: #f1f1f1;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .disclaimer {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="/api/placeholder/50/50" alt="CTC Logo">
+                <span>Community.TechChat</span>
+            </div>
+            <div class="premium-badge">Premium</div>
+        </header>
+        
+        <h1>Proveedores</h1>
+        
+        <p>En esta sección, destacamos la importancia de nuestros proveedores en el éxito de nuestros productos y servicios. Trabajamos con una selecta red de proveedores que comparten nuestro compromiso con la calidad, la innovación y la sostenibilidad.</p>
+        
+        <p>Gracias a estas colaboraciones, podemos ofrecer a nuestros clientes materiales y servicios de primer nivel, asegurando que cada proyecto se realice con los estándares más altos. La elección cuidadosa de nuestros proveedores no solo fortalece nuestra cadena de suministro, sino que también garantiza que nuestros clientes reciban lo mejor en cada entrega.</p>
+        
+        <p>Valoramos estas relaciones, ya que son fundamentales para nuestra misión de brindar un servicio excepcional y superar las expectativas de nuestros clientes.</p>
+        
+        <div class="form-group">
+            <label for="tipo-productos">Tipo de productos:</label>
+            <input type="text" id="tipo-productos" name="tipo-productos">
+        </div>
+        
+        <div class="form-group">
+            <label for="mas-productos">Más productos:</label>
+            <input type="text" id="mas-productos" name="mas-productos">
+        </div>
+        
+        <div class="form-group">
+            <label for="cantidad-productos">Cantidad de productos:</label>
+            <input type="text" id="cantidad-productos" name="cantidad-productos">
+        </div>
+        
+        <button class="back-button">Atrás</button>
+        
+        <p class="disclaimer">
+            ¡Bienvenido a Community.TechChat! Al unirte como proveedor, aceptas los siguientes términos: los "Productos y Servicios" se refieren a lo que ofreces y/o realizas de cualquier orden que hagamos. La aceptación de un pedido debe ser confirmada por escrito. El proveedor acepta cumplir con nuestro calendario y términos de entrega acordados. Los precios acordados estarán reflejados en el pedido, y los pagos se realizarán generalmente en [insertar] días tras recibir la factura. Debes entregar en la fecha y lugar acordados, a tus propios riesgos, asumiendo los costos de transporte. Mantendrás la información que te proporcionemos confidencial y no la divulgarás. Nuestros términos estarán regidos por las leyes del Estado de [insertar]
